@@ -6,7 +6,7 @@ Tarefas:
         void setLoanLimit(double loanLimit);
         void loan(double amount, double operationCost) throws InvalidAmountException;
 
-2. Implementar `BusinessAccount` com uma classe `BusinessAccountClass`
+2. Implementar `BusinessAccount` com uma classe `BusinessAccountClass`, que oferece os mesmos métodos que `AccountClass`, além dos métodos de `BusinessAccount`.
 
 3. Criar a interface `InterestRateInstrument` para representar um instrumento sujeito a uma taxa de juro.
    

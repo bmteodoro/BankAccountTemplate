@@ -1,10 +1,10 @@
 Tarefas:
 
-1. Extender Account com BusinessAccount. Acrescentar os métodos:
+1. Extender `Account` com a classe `BusinessAccount`. Acrescentar os métodos:
 
         double getLoanLimit();
         void setLoanLimit(double loanLimit);
-        void loan(double amount) throws InvalidAmountException;
+        void loan(double amount, double operationCost) throws InvalidAmountException;
 
 2. Implementar `BusinessAccount` com uma classe `BusinessAccountClass`
 

@@ -1,7 +1,6 @@
 package pt.ual.bank;
 
-public class SavingsAccount extends AccountClass implements InterestRateInstrument{
-
+public class SavingsAccount extends AccountClass implements InterestRateInstrument {
     private double rate;
 
     public SavingsAccount(String number, String holder, double balance, double rate) {
@@ -11,6 +10,9 @@ public class SavingsAccount extends AccountClass implements InterestRateInstrume
 
     @Override
     public void setRate(double rate) throws NegativeRateException {
+        if (rate < 0) {
+            throw new NegativeRateException();
+        }
         this.rate = rate;
     }
 
@@ -21,6 +23,6 @@ public class SavingsAccount extends AccountClass implements InterestRateInstrume
 
     @Override
     public void updateBalance() {
-        
+        deposit(getBalance() * rate);
     }
 }

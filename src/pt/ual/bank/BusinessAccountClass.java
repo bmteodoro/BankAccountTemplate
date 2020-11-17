@@ -1,5 +1,6 @@
 package pt.ual.bank;
 
+
 public class BusinessAccountClass extends AccountClass implements BusinessAccount {
     private double loanLimit;
 

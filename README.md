@@ -1,6 +1,6 @@
 Tarefas:
 
-1. Extender `Account` com a classe `BusinessAccount`. Acrescentar os métodos:
+1. Extender `Account` com a interface `BusinessAccount`. Acrescentar os métodos:
 
         double getLoanLimit();
         void setLoanLimit(double loanLimit);
